@@ -1,0 +1,250 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.shopTitle {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, white, #f0f3f5);
+}
+
+.product {
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 50px;
+  padding: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.product img {
+  width: 320px;
+  height: 320px;
+  padding-bottom: 65px;
+}
+
+.product .description {
+  text-align: center;
+}
+
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.addToCartBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.addToCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
+
+.productName {
+  margin-top: 5px;
+}
+
+#productPrice {
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.description p {
+  width: 150px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.cartItem img {
+  width: 200px;
+  padding: 10px;
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 2px;
+}
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+.checkout button:hover {
+  width: 150px;
+  height: 50px;
+  background-color: Black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.countHandler button {
+  width: 15px;
+}
+.checkout p {
+  text-align: center;
+}
+
+.checkout-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: red;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+  border-bottom: 1px solid red;
+  padding-bottom: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.subtotal {
+  text-align: right;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.complete-purchase-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.complete-purchase-btn:hover {
+  background-color: #45a049;
+}
+
+.checkoutbox {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: row;
+
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.checkoutbox input {
+  width: 200px;
+  height: 50px;
+}
+.productDetailsBox {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  border: 2px solid rgb(19, 19, 19);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  margin-top: 10px;
+  max-width: 80%;
+}
+
+.backBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
